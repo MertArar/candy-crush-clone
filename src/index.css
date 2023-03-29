@@ -16,6 +16,7 @@ body {
   justify-content: center;
   margin-top: 5rem;
   flex-direction: row;
+  position: relative;
 }
 
 .game {
@@ -32,6 +33,7 @@ body {
   width: 70px;
   height: 70px;
   align-items: center;
+  cursor: pointer;
 }
 
 .score-board {
@@ -41,4 +43,85 @@ body {
 .score-board h2 {
   color: white;
   font-family: "Open Sans", sans-serif;
+  font-size: 28px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 920px) {
+  .game {
+    width: 300px;
+    height: 300px;
+  }
+  .game img {
+    width: 37px;
+    height: 37px;
+  }
+
+  .score-board h2 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .game {
+    width: 210px;
+    height: 210px;
+  }
+  .game img {
+    width: 26px;
+    height: 26px;
+  }
+  .score-board h2 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  .game {
+    width: 140px;
+    height: 140px;
+  }
+  .game img {
+    width: 17, 5px;
+    height: 17, 5px;
+  }
+  .score-board h2 {
+    font-size: 14px;
+  }
+}
+
+/* MAX height */
+
+@media screen and (max-height: 920px) {
+  .game {
+    width: 300px;
+    height: 300px;
+  }
+  .game img {
+    width: 37px;
+    height: 37px;
+  }
+}
+
+@media screen and (max-height: 720px) {
+  .game {
+    width: 210px;
+    height: 210px;
+  }
+  .game img {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+@media screen and (max-height: 200px) {
+  .game {
+    width: 140px;
+    height: 140px;
+  }
+  .game img {
+    width: 17, 5px;
+    height: 17, 5px;
+  }
 }
